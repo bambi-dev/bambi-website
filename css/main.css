@@ -1219,6 +1219,13 @@ Logo
     background-color: #f0f1eb;
 }
 
+/*
+Slogan
+*/
+.header-top h4 {
+    color: #009246;
+}
+
 .top-logo {
     margin: 25px 0;
     width: 188px;
