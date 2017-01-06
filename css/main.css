@@ -3556,13 +3556,13 @@ totop
 
 .skill-info ul {
     list-style: none;
-    height: 250px;
+    height: 275px;
     margin: 0;
     padding: 31px 0;
 }
 
 .skill-info ul li {
-    max-width: 250px;
+    max-width: 275px;
     margin: auto;
     padding: 20px 0;
 }
