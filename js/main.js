@@ -114,8 +114,7 @@ function documentReadyInit() {
                 $.ajax({                    
                     url: "https://formspree.io/BambiSenderMail@gmail.com",
                     method: "POST",
-                    //data: $('#contact-form').serialize(),
-                    data: {message: "hello!"},
+                    data: $('#contact-form').serialize(),
                     datatype: 'json'
                 });
                 e.preventDefault();
