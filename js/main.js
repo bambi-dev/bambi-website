@@ -93,63 +93,17 @@ function documentReadyInit() {
     jQuery('form.contact-form').on('submit', function( e ){    	
     	
     	e.preventDefault();//just prevent reload page
-
-    	 var email, message, name;
-            /*
-            name = document.getElementById('inputName');
-            email = document.getElementById('inputEmail');
-            message = document.getElementById('inputMessage');
-            
-
-            name = "Fer";
-            email = "mymail.com";
-            message = "Hey, this is just a mail sender test from plain HTML just using fórmspree";
-            if (!name.value || !email.value || !message.value) {
-                alert('Please check your entries');
-                return false;
-            } else {
-            	*/
-            	var toSend = $('#contact-form').serialize();
-            	console.log(toSend);
-                $.ajax({                    
-                    url: "https://formspree.io/BambiSenderMail@gmail.com",
-                    method: "POST",
-                    data: $('#contact-form').serialize(),
-                    datatype: 'json'
-                });
-                e.preventDefault();
-                $(this).get(0).reset();
-                alert('Message sent');
-           //}
-
-
-    	/*
-        e.preventDefault();
-        var $form = jQuery(this);
-        jQuery($form).find('span.contact-form-respond').remove();
-
-        //checking on empty values
-        jQuery($form).find('[aria-required="true"], [required]').each(function(index) {
-        	if (!jQuery(this).val().length) {
-        		jQuery(this).addClass('invalid').on('focus', function(){jQuery(this).removeClass('invalid')});
-        	}
+       	var toSend = $('#contact-form').serialize();
+    	console.log(toSend);
+        $.ajax({                    
+            url: "https://formspree.io/BambiSenderMail@gmail.com",
+            method: "POST",
+            data: $('#contact-form').serialize(),
+            datatype: 'json'
         });
-        //if one of form fields is empty - exit
-        if ($form.find('[aria-required="true"], [required]').hasClass('invalid')) {
-        	return;
-        }
-
-
-        //sending form data to PHP server if fields are not empty
-        var request = $form.serialize();
-        var ajax = jQuery.post( "contact-form.php", request )
-            .done(function( data ) {
-                jQuery($form).find('[type="submit"]').attr('disabled', false).parent().append('<span class="contact-form-respond highlight">'+data+'</span>');
-        	})
-            .fail(function( data ) {
-                jQuery($form).find('[type="submit"]').attr('disabled', false).parent().append('<span class="contact-form-respond highlight">Mail cannot be sent. You need PHP server to send mail.</span>');
-        	})
-        	*/
+        e.preventDefault();
+        $(this).get(0).reset();
+        alert('Message sent');
     });
 
 
