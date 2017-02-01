@@ -330,10 +330,12 @@
 <script src="js/jquery-ui.js"></script>
 
 <!-- Map Scripts -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBToNAUBENkmv0EBHEu5wrKjPc16aTsnVg&callback=initMap"
+        async defer></script>
 
-<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+
 <script type="text/javascript">
-    var lat;
+    /*var lat;
     var lng;
     var map;
     var styles = [{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"color":"#444444"}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#f2f2f2"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":-100},{"lightness":45}]},{"featureType":"road.highway","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#46bcec"},{"visibility":"on"}]}];
@@ -378,6 +380,40 @@
         //type your map title and description here
         attachSecretMessage(marker, '<h3>Map title</h3><p>Map HTML description</p>');
     }
+
+    var mapObj = new GMaps({
+  el: '#map',
+  lat: 48.857,
+  lng: 2.295
+    });
+    var m = mapObj.addMarker({
+      lat: 48.8583701,
+      lng: 2.2944813,
+      title: 'Eiffel Tower',
+      infoWindow: {
+        content: '<h4>Eiffel Tower</h4><div>Paris, France</div>',
+        maxWidth: 100
+      }
+    });
+    mapObj.addMarker({
+      lat: 48.8553701,
+      lng: 2.2944813,
+      mouseover: function(e) {
+        alert('Triggered');
+      }
+    });
+*/
+<script>
+
+var map;
+function initMap() {
+  map = new google.maps.Map(document.getElementById('map'), {
+    center: {lat: -34.397, lng: 150.644},
+    zoom: 8
+  });
+}
+
+
 </script>
 
 </body>
