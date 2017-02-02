@@ -42,39 +42,104 @@
 <div class="bg-danger text-center">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/" class="highlight">upgrade your browser</a> to improve your experience.</div>
 <![endif]-->
 
-<!-- search modal -->
-<div class="modal" tabindex="-1" role="dialog" aria-labelledby="search_modal" id="search_modal">
-    <div class="widget widget_search">
-        <form method="get" class="searchform form-inline" action="http://webdesign-finder.com/">
-            <div class="form-group">
-                <input type="text" value="" name="search" class="form-control" placeholder="Search keyword" id="modal-search-input">
-            </div>
-            <button type="submit" class="theme_button">Search</button>
-        </form>
-    </div>
-</div>
-
 <!-- wrappers for visual page editor and boxed version of template -->
 <div id="canvas">
     <div id="box_wrapper">
 
-        <di id="header-menu"></di>
+        <!-- <div id="header-menu"></div> -->
+
+        <header class="page_header header_white">
+    <div class="header-top">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-4">
+                    <a href="index.html">
+                        <img src="images/logo_bambilandia.png" alt="Babysitter logo" class="top-logo">
+                    </a>
+                </div>
+                <div class="col-sm-4 text-center">
+                    <div class="social-icons">
+                        <h4>"Educar en Valor, Amor y Libertad."</h4>
+                    </div>
+                </div>
+                <div class="col-sm-4 text-right ">
+                    <div class="contact-info">
+                        <div class="contact-number">
+                            <span>(01)</span> 418-8408
+                        </div>
+                        <div class="work-hours">
+                            7:00 a.m. - 7:00 p.m.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <!-- main nav start -->
+                <nav class="mainmenu_wrapper">
+                    <ul class="mainmenu sf-menu" id="bari">
+                        <li>
+                            <a href="index.html">Inicio</a>
+                        </li>                        
+
+                        <li>
+                            <a href="#">Nosotros</a>
+                        </li>
+                        
+                        <li>
+                            <a href="#">Servicios</a>
+                            <ul>
+                                <li>
+                                     <a href="404.html">Psicologia</a>
+                                  </li>
+                                  <li> 
+                                     <a href="faq.html">Danzas</a>
+                                  </li>
+                                  <li> 
+                                     <a href="terms.html">Ballet</a>
+                                  </li>
+                                  <li>
+                                     <a href="calculator.html">Karate</a>
+                                 </li>                                
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#">Galeria</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Citas</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Guarderia</a>
+                        </li>
+
+                        <li class="active">
+                            <a href="contacts.html">Contáctanos</a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- eof main nav -->
+                <div class="toggle_menu-wrap" data-spy="affix" data-offset-top="425">
+                    <span class="toggle_menu"><span></span></span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</header>
 
         <section class="page_breadcrumbs">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12 text-center">
-                        <h3>Home</h3>
-                        <ol class="breadcrumb">
-                            <li>
-                                <a href="index-2.html">
-                                    Home
-                                </a>
-                            </li>
-                            <li class="active">
-                                <a href="contacts.html">Contacts</a>
-                            </li>
-                        </ol>
+                        <h3>Nuestra Ubicación</h3>                        
                     </div>
                 </div>
             </div>
@@ -84,135 +149,124 @@
         <section id="map"></section>
 
         <section class="contacts">
-            <div class="container">
-                <div class="row text-center">
-                    <div class="col-md-4">
-                        <span class="rt-icon2-location-outline pink"></span>
-                        <p>1467 Walnut Street, Jackson, MS 39201</p>
-                    </div>
-                    <div class="col-md-4">
-                        <span class="rt-icon2-mail2 blue"></span>
-                        <a href="#">babytime@support.com</a>
-                    </div>
-                    <div class="col-md-4">
-                        <span class="rt-icon2-phone-outline light-green"></span>
-                        <p>(800) 624-75-54, (800) 863-14-56</p>
-                    </div>
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <span class="rt-icon2-location-outline pink"></span>
+                    <p>Calle Las Pleyades Mz.U Lt.20, La Campiña- Chorrillos</p>
                 </div>
-                <div class="row">
-                    <div class="col-xs-12">
-                        <div class="form-wrap">
-                            <form class="contact-form" method="post" action="http://webdesign-finder.com/">
-                                <input type="text" aria-required="true" size="30" value="" name="name" id="name" class="form-control" placeholder="Full Name">
-                                <input type="email" aria-required="true" size="30" value="" name="email" id="email" class="form-control" placeholder="Email Adress">
-                                <input type="text" aria-required="true" size="30" value="" name="phone" id="phone" class="form-control" placeholder="Phone Number">
-                                <div class="form-control-group">
-                                    <input type="text" aria-required="true" class="form-control" value="" name="date" id="datepicker" placeholder="Date">
-                                </div>
-                                <select aria-required="true" id="time" name="time">
-                                    <option value="" disabled selected>Time</option>
-                                    <option value="12:00 AM">12:00 AM</option>
-                                    <option value="12:30 AM">12:30 AM</option>
-                                    <option value="1:00 AM">1:00 AM</option>
-                                    <option value="1:30 AM">1:30 AM</option>
-                                    <option value="2:00 AM">2:00 AM</option>
-                                    <option value="2:30 AM">2:30 AM</option>
-                                    <option value="3:00 AM">3:00 AM</option>
-                                    <option value="3:30 AM">3:30 AM</option>
-                                    <option value="4:00 AM">4:00 AM</option>
-                                    <option value="4:30 AM">4:30 AM</option>
-                                    <option value="5:00 AM">5:00 AM</option>
-                                    <option value="5:30 AM">5:30 AM</option>
-                                    <option value="6:00 AM">6:00 AM</option>
-                                    <option value="6:30 AM">6:30 AM</option>
-                                    <option value="7:00 AM">7:00 AM</option>
-                                    <option value="7:30 AM">7:30 AM</option>
-                                    <option value="8:00 AM">8:00 AM</option>
-                                    <option value="8:30 AM">8:30 AM</option>
-                                    <option value="9:00 AM">9:00 AM</option>
-                                    <option value="9:30 AM">9:30 AM</option>
-                                    <option value="10:00 AM">10:00 AM</option>
-                                    <option value="10:30 AM">10:30 AM</option>
-                                    <option value="11:00 AM">11:00 AM</option>
-                                    <option value="11:30 AM">11:30 AM</option>
-                                    <option value="12:00 PM">12:00 PM</option>
-                                    <option value="12:30 PM">12:30 PM</option>
-                                    <option value="1:00 PM">1:00 PM</option>
-                                    <option value="1:30 PM">1:30 PM</option>
-                                    <option value="2:00 PM">2:00 PM</option>
-                                    <option value="2:30 PM">2:30 PM</option>
-                                    <option value="3:00 PM">3:00 PM</option>
-                                    <option value="3:30 PM">3:30 PM</option>
-                                    <option value="4:00 PM">4:00 PM</option>
-                                    <option value="4:30 PM">4:30 PM</option>
-                                    <option value="5:00 PM">5:00 PM</option>
-                                    <option value="5:30 PM">5:30 PM</option>
-                                    <option value="6:00 PM">6:00 PM</option>
-                                    <option value="6:30 PM">6:30 PM</option>
-                                    <option value="7:00 PM">7:00 PM</option>
-                                    <option value="7:30 PM">7:30 PM</option>
-                                    <option value="8:00 PM">8:00 PM</option>
-                                    <option value="8:30 PM">8:30 PM</option>
-                                    <option value="9:00 PM">9:00 PM</option>
-                                    <option value="9:30 PM">9:30 PM</option>
-                                    <option value="10:00 PM">10:00 PM</option>
-                                    <option value="10:30 PM">10:30 PM</option>
-                                    <option value="11:00 PM">11:00 PM</option>
-                                    <option value="11:30 PM">11:30 PM</option>
-                                </select>
-                                <textarea rows="6" cols="45" name="message" id="message" placeholder="Additional Info"></textarea>
-                                <button type="submit" id="contact_form_submit" name="contact_submit" class="btn-type1">Send Message</button>
-                            </form>
-                        </div>
+                <div class="col-md-4">
+                    <span class="rt-icon2-mail2 blue"></span>
+                    <a href="#">nidobambilandia@hotmail.com</a>
+                </div>
+                <div class="col-md-4">
+                    <span class="rt-icon2-phone-outline light-green"></span>
+                    <p>(01) 418-8408, 940-279-049</p>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid parallax">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="form-wrap">
+                        <form class="contact-form" id="contact-form">
+                            <input type="text" aria-required="true" size="30" value="" name="name" id="name" class="form-control" placeholder="Nombre completo">
+                            <input type="email" aria-required="true" size="30" value="" name="email" id="email" class="form-control" placeholder="Email">
+                            <input type="text" aria-required="true" size="30" value="" name="phone" id="phone" class="form-control" placeholder="Telefono">
+                            <div class="form-control-group">
+                                <input type="text" aria-required="true" class="form-control" value="" name="date" id="datepicker" placeholder="Fecha">
+                            </div>
+                            <select aria-required="true" id="time" name="time">
+                                <option value="" disabled selected>Hora</option>
+                                <option value="12:00 AM">12:00 AM</option>
+                                <option value="12:30 AM">12:30 AM</option>
+                                <option value="1:00 AM">1:00 AM</option>
+                                <option value="1:30 AM">1:30 AM</option>
+                                <option value="2:00 AM">2:00 AM</option>
+                                <option value="2:30 AM">2:30 AM</option>
+                                <option value="3:00 AM">3:00 AM</option>
+                                <option value="3:30 AM">3:30 AM</option>
+                                <option value="4:00 AM">4:00 AM</option>
+                                <option value="4:30 AM">4:30 AM</option>
+                                <option value="5:00 AM">5:00 AM</option>
+                                <option value="5:30 AM">5:30 AM</option>
+                                <option value="6:00 AM">6:00 AM</option>
+                                <option value="6:30 AM">6:30 AM</option>
+                                <option value="7:00 AM">7:00 AM</option>
+                                <option value="7:30 AM">7:30 AM</option>
+                                <option value="8:00 AM">8:00 AM</option>
+                                <option value="8:30 AM">8:30 AM</option>
+                                <option value="9:00 AM">9:00 AM</option>
+                                <option value="9:30 AM">9:30 AM</option>
+                                <option value="10:00 AM">10:00 AM</option>
+                                <option value="10:30 AM">10:30 AM</option>
+                                <option value="11:00 AM">11:00 AM</option>
+                                <option value="11:30 AM">11:30 AM</option>
+                                <option value="12:00 PM">12:00 PM</option>
+                                <option value="12:30 PM">12:30 PM</option>
+                                <option value="1:00 PM">1:00 PM</option>
+                                <option value="1:30 PM">1:30 PM</option>
+                                <option value="2:00 PM">2:00 PM</option>
+                                <option value="2:30 PM">2:30 PM</option>
+                                <option value="3:00 PM">3:00 PM</option>
+                                <option value="3:30 PM">3:30 PM</option>
+                                <option value="4:00 PM">4:00 PM</option>
+                                <option value="4:30 PM">4:30 PM</option>
+                                <option value="5:00 PM">5:00 PM</option>
+                                <option value="5:30 PM">5:30 PM</option>
+                                <option value="6:00 PM">6:00 PM</option>
+                                <option value="6:30 PM">6:30 PM</option>
+                                <option value="7:00 PM">7:00 PM</option>
+                                <option value="7:30 PM">7:30 PM</option>
+                                <option value="8:00 PM">8:00 PM</option>
+                                <option value="8:30 PM">8:30 PM</option>
+                                <option value="9:00 PM">9:00 PM</option>
+                                <option value="9:30 PM">9:30 PM</option>
+                                <option value="10:00 PM">10:00 PM</option>
+                                <option value="10:30 PM">10:30 PM</option>
+                                <option value="11:00 PM">11:00 PM</option>
+                                <option value="11:30 PM">11:30 PM</option>
+                            </select>
+                            <textarea rows="6" cols="45" name="message" id="message" placeholder="Info Adicional"></textarea>
+                            <button type="submit" id="contact_form_submit" name="contact_submit" class="btn-type1">Enviar Mensaje</button>
+                        </form>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <footer class="page_footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4 text-center">
-                        <div class="open-hours">
-                            <h3>Open <span>Hours</span></h3>
-                            <div>Monday - Friday <span>9:00 - 17:00</span></div>
-                            <div>Saturday <span>11:00 - 15:00</span></div>
-                            <div>Sunday <span>Closed</span></div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 text-center">
-                        <div class="widget widget_flickr">
-                            <h3 class="widget-title">Flickr</h3>
-                            <ul id="flickr"></ul>
-                        </div>
-                    </div>
-                    <div class="col-md-4 text-center">
-                        <div class="widget widget_mailchimp">
-                            <h3 class="widget-title">Mailchimp</h3>
-                            <form class="signup form-inline" action="http://webdesign-finder.com/" method="get">
-                                <div class="form-group">
-                                    <input name="email" type="email" class="mailchimp_email form-control" placeholder="Email">
-                                </div>
-                                <button type="submit" class="theme_button rt-icon2-pen2"></button>
-                                <div class="response"></div>
-                            </form>
-                            <p>Subscribe to our latest news to be updated, we promise not to spam!</p>
-                        </div>
-                    </div>
+<footer class="page_footer">
+    <div class="container">        
+        <div class="row">
+            <!-- It may have another way to center a row, that just  empty divs TODO -->
+            <div class="col-md-4 text-center">
+            </div>
+            <div class="col-md-4 text-center">
+                <div class="open-hours">
+                    <h3>Horarios de <span>Atención</span></h3>
+                    <div>Lunes - Viernes <span>7:00 - 19:00</span></div>
+                    <div>Sábado <span>8:00 - 13:00</span></div>
+                    <div>Domingo <span>Cerrado</span></div>
                 </div>
             </div>
-            <img src="images/logo-footer.png" alt="Babysitter logo" class="logo-footer">
-        </footer>
+            <div class="col-md-4 text-center">                
+            </div>
+        </div>
+    </div>
+    <img src="images/logo_bambilandia.png" alt="Babysitter logo" class="logo-footer">
+</footer>
 
-        <section class="page_copyright">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-12 text-center">
-                        <p>&copy; Copyright 2016 by <a href="#">MW Templates</a>. All Rights Reserved</p>
-                    </div>
-                </div>
+<section class="page_copyright">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <p>"Educar en Valor, Amor y Libertad."</p>
             </div>
-        </section>
+        </div>
+    </div>
+</section>
+
 
     </div><!-- eof #box_wrapper -->
 </div><!-- eof #canvas -->
@@ -325,10 +379,6 @@ function myMap() {
         infowindow.open(map, marker);
     });
 }
- 
-            //Manage tabs
-             $("#bari li a").click(function() {
-    $(this).parent().addClass('active').siblings().removeClass('active');
  
 </script>
 

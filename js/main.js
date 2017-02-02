@@ -103,17 +103,13 @@ function documentReadyInit() {
         });
         e.preventDefault();
         $(this).get(0).reset();
-        alert('Message sent');
+        alert('Mensaje Enviado');
     });
 
-    //load header-menu html file
-    $('#header-menu').load('template/header-menu.html');
+    //load external html files
+    // TODO improve it
+    //$('#header-menu').load('template/header-menu.html');
 
-    //tab
-    $("#bari li a").click(function() {
-    $(this).parent().addClass('active').siblings().removeClass('active');
-
-    });
 
 	//search modal
 	jQuery(".search_modal_button").on('click', function(e){
@@ -456,6 +452,13 @@ function documentReadyInit() {
 	jQuery('.panel-group').each(function() {
 		jQuery(this).find('a').first().filter('.collapsed').trigger('click');
 	});
+
+	//tab
+	//TODO, should implement dynamically selection in item (li) in menu bar
+    //$("#bari li a").click(function() {
+    //	$(this).parent().addClass('active').siblings().removeClass('active');
+    //});
+
 }//eof documentReadyInit
 
 //function that initiating template plugins on window.load event
@@ -826,8 +829,6 @@ function windowLoadInit() {
 	});
 
 	jQuery('body').scrollspy('refresh');
-
-
 	
 	//animation to elements on scroll
 	if (jQuery().appear) {
