@@ -58,114 +58,7 @@
 <div id="canvas">
     <div id="box_wrapper">
 
-        <header class="page_header header_white">
-            <div class="header-top">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <a href="index-2.html">
-                                <img src="images/logo.png" alt="Babysitter logo" class="top-logo">
-                            </a>
-                        </div>
-                        <div class="col-sm-4 text-center">
-                            <div class="social-icons">
-                                <a href="#" class="social-icon color-bg-icon rounded-icon soc-facebook"></a>
-                                <a href="#" class="social-icon color-bg-icon rounded-icon soc-twitter"></a>
-                                <a href="#" class="social-icon color-bg-icon rounded-icon soc-google"></a>
-                                <a href="#" class="social-icon color-bg-icon rounded-icon soc-skype"></a>
-                                <a href="#" class="social-icon color-bg-icon rounded-icon rt-icon2-youtube5"></a>
-                                <div class="clearfix"></div>
-                            </div>
-                        </div>
-                        <div class="col-sm-4 text-right ">
-                            <div class="contact-info">
-                                <div class="contact-number">
-                                    <span>800</span> 353 7587
-                                </div>
-                                <div class="work-hours">
-                                    9:00 a.m. - 5:00 p.m.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-sm-12 text-center">
-                        <!-- main nav start -->
-                        <nav class="mainmenu_wrapper">
-                            <ul class="mainmenu sf-menu">
-                                <li>
-                                    <a href="index-2.html">Home</a>
-                                </li>
-                                <li>
-                                    <a href="calendar.html">Pages</a>
-                                    <ul>
-                                        <li>
-                                            <a href="calendar.html">Calendar</a>
-                                        </li>
-                                        <li>
-                                            <a href="404.html">404</a>
-                                        </li>
-                                        <li>
-                                            <a href="faq.html">FAQ</a>
-                                        </li>
-                                        <li>
-                                            <a href="terms.html">Terms</a>
-                                        </li>
-                                        <li>
-                                            <a href="calculator.html">Service Calculator</a>
-                                        </li>
-                                        <li>
-                                            <a href="courses.html">Courses</a>
-                                        </li>
-                                        <li>
-                                            <a href="elements.html">Elements</a>
-                                        </li>
-                                        <li>
-                                            <a href="typography.html">Typography</a>
-                                        </li>
-                                        <li>
-                                            <a href="widgets.html">Widgets</a>
-                                        </li>
-                                    </ul>
-                                </li>
-
-                                <li>
-                                    <a href="about.html">About</a>
-                                </li>
-                                <li>
-                                    <a href="services.html">Services</a>
-                                </li>
-
-                                <li>
-                                    <a href="blog.html">Blog</a>
-                                </li>
-
-                                <li>
-                                    <a href="gallery_fullwidth.html">Galery</a>
-                                </li>
-
-                                <li>
-                                    <a href="appointment.html">Appointment</a>
-                                </li>
-
-                                <li class="active">
-                                    <a href="contacts.html">Contacts</a>
-                                </li>
-                            </ul>
-                        </nav>
-                        <!-- eof main nav -->
-                        <div class="toggle_menu-wrap" data-spy="affix" data-offset-top="246">
-                            <span class="toggle_menu"><span></span></span>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </header>
+        <di id="header-menu"></di>
 
         <section class="page_breadcrumbs">
             <div class="container">
@@ -329,10 +222,10 @@
 <script src="js/main.js"></script>
 <script src="js/jquery-ui.js"></script>
 
-<!-- Map Scripts -->
+<!-- Map Scripts 
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBToNAUBENkmv0EBHEu5wrKjPc16aTsnVg&callback=initMap"
         async defer></script>
-
+-->
 
 <script type="text/javascript">
     /*var lat;
@@ -403,20 +296,43 @@
       }
     });
 */
-<script>
-
-var map;
-function initMap() {
-  map = new google.maps.Map(document.getElementById('map'), {
-    center: {lat: -34.397, lng: 150.644},
-    zoom: 8
-  });
-}
-
-
 </script>
 
-</body>
+<script>
+function myMap() {
+    var myLatLng = {lat:-12.1713688, lng:-77.0002086};
+    
+    var mapProp= {
+    center:myLatLng,
+    zoom:13
+    };
 
-<!-- Mirrored from webdesign-finder.com/html/babysitter/contacts.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 18 Oct 2016 03:51:58 GMT -->
+    var map=new google.maps.Map(document.getElementById("map"),mapProp);
+
+    var marker = new google.maps.Marker({
+      position: myLatLng,
+      title: 'Nido Bambilandia',
+      map: map
+    });
+
+    var contentInfo = "<h5>Hola Estamos justo aquí,  te esperamos.</h5><br> <img src='images/logo_bambilandia.png'/> ";
+
+    var infowindow = new google.maps.InfoWindow({
+        content: contentInfo
+    });
+
+    marker.addListener('click', function(){
+        infowindow.open(map, marker);
+    });
+}
+ 
+            //Manage tabs
+             $("#bari li a").click(function() {
+    $(this).parent().addClass('active').siblings().removeClass('active');
+ 
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC-FVFmerEuon3zCZ_PXjJuplV9X1ce_7Y&callback=myMap"></script>
+
+</body>
 </html>

@@ -106,6 +106,14 @@ function documentReadyInit() {
         alert('Message sent');
     });
 
+    //load header-menu html file
+    $('#header-menu').load('template/header-menu.html');
+
+    //tab
+    $("#bari li a").click(function() {
+    $(this).parent().addClass('active').siblings().removeClass('active');
+
+    });
 
 	//search modal
 	jQuery(".search_modal_button").on('click', function(e){
