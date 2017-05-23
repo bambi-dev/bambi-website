@@ -536,8 +536,7 @@ button:hover,
 
 .intro_section,
 .team {
-  position: relative;
-  overflow: hidden;
+  position: relative;  
 }
 
 .intro_section > img
