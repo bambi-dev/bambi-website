@@ -6021,8 +6021,10 @@ form.searchform {
 }
 
 .single-item img {
-    width: 100%;
-}
+    /*width: 100%;*/
+    padding-left: 25%;
+    padding-right: 25%;
+  }
 
 .single-item-body {
     padding: 50px 30px 40px;
