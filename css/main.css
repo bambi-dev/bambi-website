@@ -2547,6 +2547,7 @@ html[xmlns] .slides {
   width: 70px;
   height: 100%;
   /*margin: -20px 0 0;*/
+  position: absolute;
   /*top: 50%;*/
   z-index: 10;
   overflow: hidden;
