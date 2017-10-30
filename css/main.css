@@ -4383,13 +4383,13 @@ item media block
 }
 
 .testimonials .carousel-indicators li[data-slide-to="0"] {
-    background-image: url(../images/author-1.jpg);
+    background-image: url(../images/authorE-1.jpg);
 }
 .testimonials .carousel-indicators li[data-slide-to="1"] {
-    background-image: url(../images/author-2.jpg);
+    background-image: url(../images/authorE-2.jpg);
 }
 .testimonials .carousel-indicators li[data-slide-to="2"] {
-    background-image: url(../images/author-3.jpg);
+    background-image: url(../images/authorE-3.jpg);
 }
 /* ==========
    End of Testimonials section
