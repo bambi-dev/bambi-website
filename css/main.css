@@ -1227,7 +1227,7 @@ Slogan
 
 .top-logo {
     margin: 25px 0;
-    width: 188px;
+    width: 150px;
 }
 
 .page_header.affix .top-logo {
@@ -1372,9 +1372,9 @@ End of Contact-info
     }
 
     .page_header .top-logo {
-        width: 127px;
-        height: 61px;
-        margin: 10px 0 9px;
+        width: 150px;
+        height: 150px;
+        margin: 10px 0 1px;
     }
 }
 
@@ -5559,8 +5559,8 @@ End of Mailchimp
 }
 
 .page_footer .logo-footer {
-    width: 188px;
-    height: 90px;
+    width: 150px;
+    height: 150px;
     position: absolute;
     bottom: -45px;
     left: 50%;
